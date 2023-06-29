@@ -1,0 +1,15 @@
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\bin\Debug\netstandard2.0\Beacons2.deps.json
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\bin\Debug\netstandard2.0\Beacons2.dll
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\bin\Debug\netstandard2.0\Beacons2.pdb
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\Beacons2.csproj.AssemblyReference.cache
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\Beacons2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\Beacons2.AssemblyInfoInputs.cache
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\Beacons2.AssemblyInfo.cs
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\Beacons2.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\Beacons2.dll
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\refint\Beacons2.dll
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\Beacons2.pdb
+C:\Users\gabriel.dallarosa\source\repos\Beacons2\Beacons2\obj\Debug\netstandard2.0\ref\Beacons2.dll

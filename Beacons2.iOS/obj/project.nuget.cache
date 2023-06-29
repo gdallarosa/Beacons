@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "25RCBGO8HkspiQlsKU/q5ZAEEQEPk691Ydj0CR3Q0lylcOSmQV16/DPU2wh3bNb0mL03aGecLZwoClWSuB96dQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabriel.dallarosa\\source\\repos\\Beacons2\\Beacons2.iOS\\Beacons2.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

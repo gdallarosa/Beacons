@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "San3v2++c4MNM6qDW75HWlEKa/PJp7jueuwawv++MK0p+iuQnQiNqhEoph5yFYwuHtMiNm6zpFZsgT7aVbzhjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabriel.dallarosa\\source\\repos\\Beacons2\\Beacons2\\Beacons2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\gabriel.dallarosa\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
