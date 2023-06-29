@@ -24,7 +24,8 @@ namespace Beacons2.Droid
         private BluetoothLeScanner bluetoothLeScanner;
         private BluetoothScanCallback scanCallback;
         private Handler handler;
-        private static int menorFreq = 0; 
+        private static int menorFreqHoly = 0;
+        private static int menorFreqRDL = 0;
         private static TextView valorMinimoHoly;
         private static TextView valorAtualHoly;
         private static TextView valorMinimoRDL;
@@ -134,37 +135,42 @@ namespace Beacons2.Droid
                 int rssi = result.Rssi;
                 Log.Debug("Bluetooth", $"Dispositivo: {device.Name} - Endereço: {device.Address} - RSSI: {rssi}");
 
-         
-
-
-                if (device.Name == beaconAtual)
+                if (device.Name == "Holy")
                 {
-                    //valorAtual.Text = "Valor atual: " + rssi;
-
-                    if (rssi < menorFreq)
+                    valorAtualHoly.Text = "Valor atual Holy: " + rssi;
+                    if (rssi < menorFreqHoly)
                     {
-                        menorFreq = rssi;
-                        //valorMinimo.Text = "Valor minimo: " + menorFreq;
-
+                        menorFreqHoly = rssi;
+                        valorMinimoHoly.Text = "Valor minimo Holy: " + rssi;
                     }
-
+                    
                     if (rssi >= -50)
                     {
-                        if (beaconAtual == "Holy")
-                        {
-                            txtHoly.Visibility = Android.Views.ViewStates.Visible;
-                        } else
-                        {
-                            txtRDL.Visibility = Android.Views.ViewStates.Visible;
-                        }
-                        
-                    } else {
+                        txtHoly.Visibility = Android.Views.ViewStates.Visible;
+                    } else
+                    {
                         txtHoly.Visibility = Android.Views.ViewStates.Gone;
+                    }
+
+                } else
+                {
+                    valorAtualRDL.Text = "Valor atual RDL: " + rssi;
+
+                    if (rssi < menorFreqRDL)
+                    {
+                        menorFreqRDL = rssi;
+                        valorMinimoRDL.Text = "Valor minimo RDL: " + rssi;
+                    } 
+                    
+                    if (rssi >= -50)
+                    {
+                        txtRDL.Visibility = Android.Views.ViewStates.Visible;
+                    } else
+                    {
                         txtRDL.Visibility = Android.Views.ViewStates.Gone;
                     }
 
-
-                }
+                }     
 
             }
         }
