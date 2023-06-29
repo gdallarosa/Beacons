@@ -24,11 +24,12 @@ namespace Beacons2.Droid
         private BluetoothLeScanner bluetoothLeScanner;
         private BluetoothScanCallback scanCallback;
         private Handler handler;
-        private static int menorFreq = 0;
-        private static TextView valorMinimo;
-        private static TextView valorAtual;
+        private static int menorFreq = 0; 
+        private static TextView valorMinimoHoly;
+        private static TextView valorAtualHoly;
+        private static TextView valorMinimoRDL;
+        private static TextView valorAtualRDL;
         private static string beaconAtual = "Holy";
-        private static TextView beaconSelecionado;
         private static TextView txtHoly;
         private static TextView txtRDL;
 
@@ -38,30 +39,12 @@ namespace Beacons2.Droid
 
             SetContentView(Resource.Layout.activity_main);
 
-            valorAtual = FindViewById<TextView>(Resource.Id.valorAtual);
-            valorMinimo = FindViewById<TextView>(Resource.Id.valorMinimo);
-            beaconSelecionado = FindViewById<TextView>(Resource.Id.beaconSelecionado);
+            valorMinimoHoly = FindViewById<TextView>(Resource.Id.valorMinimoHoly);
+            valorAtualHoly = FindViewById<TextView>(Resource.Id.valorAtualHoly);
+            valorMinimoRDL = FindViewById<TextView>(Resource.Id.valorMinimoRDL);
+            valorAtualRDL = FindViewById<TextView>(Resource.Id.valorAtualRDL);
             txtHoly = FindViewById<TextView>(Resource.Id.txtHoly);
             txtRDL = FindViewById<TextView>(Resource.Id.txtRDL);
-            beaconSelecionado.Text = "Beacon selecionado: Holy";
-            Android.Widget.Button holy = FindViewById<Android.Widget.Button>(Resource.Id.holy);
-            Android.Widget.Button rdl = FindViewById<Android.Widget.Button>(Resource.Id.rdl);
-
-            holy.Click += (sender, e) =>
-            {
-                beaconSelecionado.Text = "Beacon selecionado: Holy";
-                valorMinimo.Text = "Valor minimo: 0";
-                beaconAtual = "Holy";
-                menorFreq = 0;
-            };
-
-            rdl.Click += (sender, e) =>
-            {
-                beaconSelecionado.Text = "Beacon selecionado: RDL52832";
-                valorMinimo.Text = "Valor minimo: 0";
-                beaconAtual = "RDL52832";
-                menorFreq = 0;
-            };
 
             BluetoothManager bluetoothManager = (BluetoothManager)GetSystemService(Context.BluetoothService);
             if (bluetoothManager != null)
@@ -71,7 +54,7 @@ namespace Beacons2.Droid
 
             if (bluetoothAdapter != null)
             {
-                // Verifica se o Bluetooth está ativado
+                // Verifica se o Bluetooth está ativado 
                 if (!bluetoothAdapter.IsEnabled)
                 {
                     Intent enableBluetoothIntent = new Intent(BluetoothAdapter.ActionRequestEnable);
@@ -151,15 +134,17 @@ namespace Beacons2.Droid
                 int rssi = result.Rssi;
                 Log.Debug("Bluetooth", $"Dispositivo: {device.Name} - Endereço: {device.Address} - RSSI: {rssi}");
 
+         
+
 
                 if (device.Name == beaconAtual)
                 {
-                    valorAtual.Text = "Valor atual: " + rssi;
+                    //valorAtual.Text = "Valor atual: " + rssi;
 
                     if (rssi < menorFreq)
                     {
                         menorFreq = rssi;
-                        valorMinimo.Text = "Valor minimo: " + menorFreq;
+                        //valorMinimo.Text = "Valor minimo: " + menorFreq;
 
                     }
 

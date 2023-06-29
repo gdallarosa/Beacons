@@ -5,30 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/holy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Holy" />
-
-        <Button
-            android:id="@+id/rdl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RDL" />
-
-    </LinearLayout>
-
     <TextView
-        android:id="@+id/beaconSelecionado"
+        android:id="@+id/valorMinimoHoly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Beacon selecionado: "
+        android:text="Valor minimo Holy: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/valorAtualHoly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor atual Holy: "
         android:textSize="16sp" />
 
     <View
@@ -37,22 +25,17 @@
         android:background="@android:color/holo_purple" />
 
     <TextView
-        android:id="@+id/valorMinimo"
+        android:id="@+id/valorMinimoRDL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor minimo: "
+        android:text="Valor minimo RDL: "
         android:textSize="16sp" />
 
-    <View
-        android:layout_width="100dp"
-        android:layout_height="5dp"
-        android:background="@android:color/holo_purple" />
-
     <TextView
-        android:id="@+id/valorAtual"
+        android:id="@+id/valorAtualRDL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor atual: "
+        android:text="Valor atual RDL: "
         android:textSize="16sp" />
 
     <View
