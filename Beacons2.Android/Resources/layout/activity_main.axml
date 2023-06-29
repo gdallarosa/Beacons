@@ -9,14 +9,14 @@
         android:id="@+id/valorMinimoHoly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor minimo Holy: "
+        android:text="Valor minimo Holy: 0"
         android:textSize="16sp" />
 
     <TextView
         android:id="@+id/valorAtualHoly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor atual Holy: "
+        android:text="Valor atual Holy: 0"
         android:textSize="16sp" />
 
     <View
@@ -28,14 +28,14 @@
         android:id="@+id/valorMinimoRDL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor minimo RDL: "
+        android:text="Valor minimo RDL: 0"
         android:textSize="16sp" />
 
     <TextView
         android:id="@+id/valorAtualRDL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor atual RDL: "
+        android:text="Valor atual RDL: 0"
         android:textSize="16sp" />
 
     <View

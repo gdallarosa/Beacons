@@ -30,7 +30,6 @@ namespace Beacons2.Droid
         private static TextView valorAtualHoly;
         private static TextView valorMinimoRDL;
         private static TextView valorAtualRDL;
-        private static string beaconAtual = "Holy";
         private static TextView txtHoly;
         private static TextView txtRDL;
 
@@ -100,7 +99,6 @@ namespace Beacons2.Droid
             {
                 bluetoothLeScanner = bluetoothAdapter.BluetoothLeScanner;
 
-                // Define o filtro de scan para beacons Bluetooth
                 ScanFilter scanFilter1 = new ScanFilter.Builder()
                     .SetDeviceName("Holy")
                     .Build();
@@ -114,7 +112,6 @@ namespace Beacons2.Droid
                     .SetScanMode(Android.Bluetooth.LE.ScanMode.LowLatency)
                     .Build();
 
-                //bluetoothLeScanner.StartScan(scanCallback);
                 bluetoothLeScanner.StartScan(new List<ScanFilter> { scanFilter1, scanFilter2 }, scanSettings, scanCallback);
             }
         }
